@@ -1,6 +1,7 @@
-# Ether2Dollar
+# CriptoCurrency Convertor 
 
-**Ether2Dollar** is a lightweight web application that allows users to convert the value of Ethereum (ETH) to United States Dollars (USD) using real-time market data. The application fetches the latest exchange rate from a cryptocurrency pricing API and performs the conversion instantly.
+**CriptoCurrency Convertor** is a lightweight web application designed to provide users with a simple and efficient way to convert the value of various cryptocurrencies into other currencies using real-time market data. The application fetches the latest exchange rates from a reliable cryptocurrency pricing API and performs conversions instantly, ensuring users always have access to the most accurate and up-to-date information.
+
 
 ## Table of Contents
 - [Motivation](#Motivation)
@@ -11,30 +12,32 @@
   - [Installation](#installation)
   - [Running the Application](#running-the-application)
 - [Usage](#usage)
-- [API Integration](#api-integration)
-- [Project Structure](#project-structure)
-- [Future Enhancements](#future-enhancements)
-- [License](#license)
 - [Author](#author)
 
 ## Motivation
 
-The rapid growth of cryptocurrencies like Ethereum has made it increasingly important for users to easily understand the value of their holdings in traditional fiat currencies like the US Dollar. However, accessing up-to-date exchange rates and performing conversions manually can be time-consuming and error-prone. **Ether2Dollar** was created to simplify this process, providing users with a quick and reliable way to convert Ethereum to USD in real-time.
+As the cryptocurrency market continues to grow, it becomes increasingly important for users to have quick and easy access to accurate exchange rates. Traditional methods of checking cryptocurrency prices and manually calculating conversions can be time-consuming and prone to errors. **CriptoCurrency Convertor** was developed to solve this problem by providing a seamless and reliable tool that allows users to convert the value of various cryptocurrencies to other currencies in real-time.
 
-By offering a straightforward interface and leveraging real-time data, Ether2Dollar aims to make cryptocurrency more accessible to everyone, whether you're a seasoned trader or just starting out. The project was also developed to enhance my skills in Web3.js and cryptocurrency API integration, and to contribute to the growing ecosystem of decentralized finance (DeFi) tools.
+This project was also inspired by the need to improve my skills in working with real-time data, API integration, and Web3.js. By developing this application, I aim to contribute to the broader crypto ecosystem and make cryptocurrency trading and management more accessible to everyone.
+
+## Technologies Used
+
+- **React**: A JavaScript library for building user interfaces, used for creating the front-end of the application.
+- **Vite**: A fast build tool that provides an optimized development experience for modern web projects, used for bundling and serving the application.
+- **JavaScript**: Core language for implementing application logic and interactions.
+- **CSS**: Styles the application for a responsive and visually appealing user experience.
+- **CoinGecko API**: Provides real-time cryptocurrency exchange rates for converting values between different cryptocurrencies and fiat currencies.
 
 
 ## Features
 
-- **Real-time Conversion**: Convert ETH to USD instantly based on live market rates.
-- **Simple Interface**: User-friendly interface for easy conversion.
-- **Expandable**: Designed to easily add support for other cryptocurrencies and fiat currencies.
+- **Multi-Currency Support**: Convert various cryptocurrencies (e.g., Bitcoin, Ethereum, Litecoin) to other fiat currencies (e.g., USD, EUR, GBP) or other cryptocurrencies in real-time.
+- **Real-Time Conversion**: The application fetches the latest exchange rates from a reliable API to ensure accurate and up-to-date conversions.
+- **Simple Interface**: Enter the amount of cryptocurrency you wish to convert, select the desired currency, and click the "Convert" button. The equivalent value will be displayed instantly.
+- **API Integration**: Fetches real-time exchange rates using the CoinGecko API, ensuring the most current market data is used for conversions.
+- **Responsive Design**: The application is designed to be fully responsive, ensuring a seamless user experience on both desktop and mobile devices.
+- **Expandable**: Easily extend the application to support more cryptocurrencies and fiat currencies as needed.
 
-## Technologies Used
-- **ReactJs**: To create the SPA .
-- **Web3.js**: Interface for interacting with Ethereum blockchain.
-
-- **API**: Fetches real-time ETH to USD exchange rates using CoinGecko API.
 
 ## Getting Started
 
@@ -55,8 +58,36 @@ By offering a straightforward interface and leveraging real-time data, Ether2Dol
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/Graciano1997/Ether2Dollar.git
-   cd Ether2Dollar
+   git clone https://github.com/Graciano1997/CriptoConvertor.git
+   
+    cd CriptoConvertor
+    npm install
+
+
+## Running the Application
+
+### Start the Development Server
+
+1. **Navigate to the Project Directory**:
+   ```bash 
+   cd CriptoConvertor
+   npm run dev
+
+## Usage
+
+1. **Enter Amount**: Input the amount of the cryptocurrency you wish to convert.
+2. **Select Cryptocurrencies**: Choose the cryptocurrency you want to convert from and the target currency (either another cryptocurrency or a fiat currency like USD).
+3. **Convert**: Click the "Convert" button.
+4. **View Results**: The application will instantly display the equivalent value in the selected currency based on the latest exchange rates.
+
+
+## Features
+
+- **Multi-Currency Support**: Convert various cryptocurrencies (e.g., Bitcoin, Ethereum, Litecoin) to other fiat currencies (e.g., USD, EUR, GBP) or other cryptocurrencies in real-time.
+- **Real-Time Conversion**: The application fetches the latest exchange rates from a reliable API to ensure accurate and up-to-date conversions.
+- **Simple Interface**: Enter the amount of cryptocurrency you wish to convert, select the desired currency, and click the "Convert" button. The equivalent value will be displayed instantly.
+- **Responsive Design**: The application is designed to be fully responsive, ensuring a seamless user experience on both desktop and mobile devices.
+- **Expandable**: Easily extend the application to support more cryptocurrencies and fiat currencies as needed.
 
 ## Installation
 
@@ -65,17 +96,3 @@ By offering a straightforward interface and leveraging real-time data, Ether2Dol
 ``` bash
 npm install
 
-## Features
-
-    Enter the amount of Ethereum (ETH) you wish to convert.
-    Click the "Convert" button.
-    The equivalent value in USD will be displayed instantly.
-
-API Integration
-
-Ether2Dollar fetches the latest ETH to USD exchange rate using the CoinGecko API.
-
-    Endpoint Used:
-        https://api.coingecko.com/api/v3/simple/price?ids=ethereum&vs_currencies=usd
-
-This endpoint provides the latest market price of Ethereum in USD.
