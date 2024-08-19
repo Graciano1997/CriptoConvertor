@@ -47,7 +47,7 @@ By offering a straightforward interface and leveraging real-time data, Ether2Dol
  ## Graciano Henrique
 **Email**: gracianomanuelhenrique@email.com
 
-**GitHub**: github.com/yourusername
+**GitHub**: github.com/Graciano1997
 
 **LinkedIn**: [Graciano Henrique](https://www.linkedin.com/in/gracianohenrique/)
 
